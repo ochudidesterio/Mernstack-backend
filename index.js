@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({limit:"30mb",extended:true}))
 app.use(cors())
 //route should be below cors
 app.use('/posts',router)
+
+
 const url = 'mongodb://localhost/MernStack';
 
 const PORT =process.env.PORT || 5000
